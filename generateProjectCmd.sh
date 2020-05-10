@@ -1,0 +1,1 @@
+java -jar ./swagger-codegen-cli-2.4.7.jar generate -i ./myapp.yaml  -o  ./myappcode  -l spring

@@ -1,0 +1,31 @@
+swagger: '2.0'
+info:
+    title: myapp
+    description: my first app in swagger and spring boot
+    version: "1.0.0"
+host: www.wangjstu.com
+schemes:
+    - http
+basePath: /v1
+produces:
+    - application/text
+    - application/json
+    - application/xml
+paths:
+    /hello:
+        get:
+           summary: helloworld
+           paramters:
+              - name: a
+                in: query
+                required: true
+                type: string
+           responses:
+                200:
+                    description: description
+                    schema:
+                        type: string
+                default:
+                    description: description
+                    schema:
+                        type: string
